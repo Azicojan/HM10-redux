@@ -2,17 +2,12 @@
 // App.js
 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import FavoritesPage from './components/FavoritesPage';
-import UsersPage from './components/UsersPage';
-import PostsPage from './components/PostsPage';
+import Favorites from './Favorites';
+import Users from './Users';
+import Posts from './Posts';
 import './App.css'
 
 const App = () => {
-  
-
-  
-
-  
 
   return (
     <BrowserRouter>
@@ -33,9 +28,9 @@ const App = () => {
       </nav>
 
       <Routes>
-        <Route path="/favorites" element={<FavoritesPage />} />
-        <Route path="/users" element={<UsersPage />} />
-        <Route path="/posts" element={<PostsPage />} />
+        <Route path="/favorites" element={<Favorites />} />
+        <Route path="/users" element={<Users />} />
+        <Route path="/posts" element={<Posts />} />
       </Routes>
     </BrowserRouter>
   );
